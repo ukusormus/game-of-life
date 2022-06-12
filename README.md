@@ -25,7 +25,9 @@
 - A project for University of Tartu's course "Tehnoloogia tarbijast loojaks (LTAT.TK.011), G" / spring of 2022
 <br>
 <br>
+
 ---
+
 ## Reflection & future: feature requests & bugs?
 - I will probably not develop this much further, but it was fun! (almost, I didn't develop deep feelings for tkinter)
 - Would be nice: pause game if no cells are to be changed (should restructure to lessen code interdependency, maybe modularize a bit etc, remove dead comments/code)
