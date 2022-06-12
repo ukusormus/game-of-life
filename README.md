@@ -1,8 +1,7 @@
 
 
 ## What?
-### **A graphical implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)**
-### **using Python 3 and tkinter**
+### **A graphical implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using Python 3 and tkinter**
 - **Multiplatform**: tested on Windows and Ubuntu (should work on MacOS)
 - **Drawing and erasing cells by clicking**
 - **Loading and saving grid layouts** (patterns)
