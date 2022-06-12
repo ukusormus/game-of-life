@@ -1,33 +1,33 @@
 
-Author: Uku Sõrmus (GitHub: ukusormus)
 
-WHAT:
-- Conway's Game of Life graphical implementation with Python and tkinter
-- Supports going step by step and auto-play with various speeds
-- Supports loading and saving grid layouts (patterns)
-- Supports changing grid size
-- Keyboard shortcuts (for controls)
-- Some sample patterns in ./layouts
-- A script to convert Plaintext to csv (look into ./layouts/plaintext_to_csv.py)
+## What?
+### **A graphical implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)**
+### **using Python 3 and tkinter**
+- **Multiplatform**: tested on Windows and Ubuntu (should work on MacOS)
+- **Drawing and erasing cells by clicking**
+- **Loading and saving grid layouts** (patterns)
+- **Step-by-step evolution** and **auto-play with various speeds**
+- **Keyboard shortcuts** (for controls)
+- **Change board size**
+- **Sample patterns included** in *src/layouts/*
+- A script to convert *Plaintext* to *csv* for patterns (because I reinvented the wheel instead of using standard formats:))
 
-WHAT NOT:
+![Demonstration of the program](./README_Showcase_Animation.webp)
+
+## What not?
 - This project is certainly not optimized for performance (especially with larger patterns)
 - Grid is not borderless / looping
 - Live cells will be wiped out when board size is changed
-- No history is saved
+- History is not saved (no undo)
 
-WHY:
+## Why?
 - Cellular automata is cool (complexity rising out of simple rules; initial layout determining "the whole life")
 - A project for University of Tartu's course "Tehnoloogia tarbijast loojaks (LTAT.TK.011), G" / spring of 2022
-
-...
-
-Future? Feature requests? Bugs?
+<br>
+<br>
+---
+## Reflection & future: feature requests & bugs?
 - I will probably not develop this much further, but it was fun! (almost, I didn't develop deep feelings for tkinter)
-- Would be nice: pause game if no cells are to be changed (should restructure the code interdependency, modularize a bit more)
-- Bug: right now it looks like the game is leaking some memory! I suspected that deleting from tkinter canvas doesn't actually free up memory (new id-s),
-  but debugging without game playing shows that list objects get added? Not sure, may be something with Thonny IDE, or ...
-- Maybe rewrite: create all canvas cell elements (rectangles) at once, then change their properties (visibility or color)
-
-...
-Read more about Conway's Game of Life: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+- Would be nice: pause game if no cells are to be changed (should restructure to lessen code interdependency, maybe modularize a bit etc, remove dead comments/code)
+- Bug: right now it looks like the game is leaking some memory! I suspected that deleting from tkinter canvas doesn't actually free up memory (new id-s)
+- Could rewrite: create all canvas cell elements (rectangles) at once, then change their visibility using canvas.itemconfig -- I tried some of that with the help of GitHub Copilot in a separate tinkering file, seemed more performant
